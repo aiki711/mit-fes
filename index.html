@@ -12,14 +12,11 @@
 </head>
 
 <body>
-  <div class="header-line">
-    <div class="header-line_inner"></div>
-  </div>
   <section class="top">
     <div class="top_image"></div>
     <div class="globalmenu">
       <div class="logo">
-        <a href="#">大学祭実行委員会</a>
+        <a href="#"></a>
       </div>
       <nav>
         <ul>
@@ -40,28 +37,58 @@
     </div>
   </section>
   <section class="section">
-    <div class="card">
-      <div>
-        <h2 class="card_title">タイトル</h2>
-        <p class="card_text">
-          サンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキスト
-        </p>
-      </div>
-      <figure class="card_figure">
-        <img class="card_img" src="https://picsum.photos/id/1015/600/400" alt="" />
-      </figure>
-    </div>
-    <div class="card">
-      <figure class="card_figure">
-        <img class="card_img" src="https://picsum.photos/id/1016/600/400" alt="" />
-      </figure>
-      <div>
-        <h2 class="card_title">タイトル</h2>
-        <p class="card_text">
-          サンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキスト
-        </p>
-      </div>
-    </div>
+    <div class="photo-box">
+      <a href="#">
+        <!-- リンク先を指定 -->
+        <div class="circumscribed-photo-box-hidden">
+          <div class="circumscribed-photo-box1"></div>
+          <div class="mouse-over-mask">
+            <div class="mask">
+              <div class="mask-text">体育祭について</div>
+            </div><!-- .mask -->
+          </div><!-- .mouse-over-mask -->
+        </div><!-- .circumscribed-photo-box-hidden -->
+      </a>
+    </div> <!-- .photo-box1 -->
+    <div class="photo-box">
+      <a href="#">
+        <!-- リンク先を指定 -->
+        <div class="circumscribed-photo-box-hidden">
+          <div class="circumscribed-photo-box2"></div>
+          <div class="mouse-over-mask">
+            <div class="mask">
+              <div class="mask-text">大学祭について</div>
+            </div><!-- .mask -->
+          </div><!-- .mouse-over-mask -->
+        </div><!-- .circumscribed-photo-box-hidden -->
+      </a>
+    </div> <!-- .photo-box2 -->
+    <div class="photo-box">
+      <a href="#">
+        <!-- リンク先を指定 -->
+        <div class="circumscribed-photo-box-hidden">
+          <div class="circumscribed-photo-box3"></div>
+          <div class="mouse-over-mask">
+            <div class="mask">
+              <div class="mask-text">お知らせ</div>
+            </div><!-- .mask -->
+          </div><!-- .mouse-over-mask -->
+        </div><!-- .circumscribed-photo-box-hidden -->
+      </a>
+    </div> <!-- .photo-box3 -->
+    <div class="photo-box">
+      <a href="#">
+        <!-- リンク先を指定 -->
+        <div class="circumscribed-photo-box-hidden">
+          <div class="circumscribed-photo-box4"></div>
+          <div class="mouse-over-mask">
+            <div class="mask">
+              <div class="mask-text">企業の方へ</div>
+            </div><!-- .mask -->
+          </div><!-- .mouse-over-mask -->
+        </div><!-- .circumscribed-photo-box-hidden -->
+      </a>
+    </div> <!-- .photo-box4 -->
   </section>
   <section class="bottom">
     <p class="bottom_text bottom_text__left js-bottom_left">WELCOME TO</p>
@@ -109,19 +136,21 @@
     <div class="bw_image"></div>
   </section>
   <section class="access">
-    <h1>ACCESS</h1>
     <p>
-      長野駅から徒歩1年<br>
-      最寄りの駅：I have nothing to do<br>
-      最寄りのバス停：目玉焼き食べたい<br>
-      結局19才なんだよね<br>
-      ふんふんふんふんふんふんふん
+      <h1>ACCESS</h1>
+      <div class="root">
+        <div class="content">長野駅から徒歩1年</div>
+        <div class="content">最寄りの駅：I have nothing to do</div>
+        <div class="content">最寄りのバス停：目玉焼き食べたい</div>
+        <div class="content">結局19才なんだよね</div>
+        <div class="content">ふんふんふんふんふんふんふん</div>
+      </div>
     </p>
   </section>
   <section class="map">
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6811.747522582341!2d141.34506863481894!3d43.066667201496124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f0b2974d2c3f903%3A0xa5e2b18cdd4a47a5!2z5pyt5bmM6aeF!5e0!3m2!1sja!2sjp!4v1630691491784!5m2!1sja!2sjp"
-        width="1200" height="650" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        width="900" height="650" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
   </section>
   <section class="bwimage">
     <div class="bw_image"></div>
@@ -131,17 +160,6 @@
   </section>
   <script>
     gsap.registerPlugin(ScrollTrigger);
-
-  // 上のスクロールインジケーター
-  const barTl = gsap.timeline({
-    scrollTrigger: {
-      trigger: "body",
-      start: "top top",
-      end: "bottom bottom",
-      scrub: true,
-    },
-  });
-    barTl.fromTo(".header-line_inner", { width: 0 }, { width: "100%" });
 
     //トップの画像パララックス
     const topTl = gsap.timeline({
@@ -170,39 +188,39 @@
 
 
     // カード
-    document.querySelectorAll(".card").forEach((el) => {
-      const img = el.querySelector(".card_figure img");
-      const title = el.querySelector(".card_title");
-      const text = el.querySelector(".card_text");
-      const tl = gsap.timeline({
-        scrollTrigger: {
-          trigger: el,
-          start: "top 80p%",
-          end: `+=${window.innerHeight / 2}`,
-          scrub: 1,
-        },
-      });
-      tl.fromTo(
-        title,
-        { y: 50 },
-        {
-          y: 0,
-          ease: "none",
-          duration: 1,
-        },
-      );
-      tl.fromTo(
-        text,
-        { y: 50 },
-        {
-          y: 0,
-          ease: "none",
-          duration: 1,
-        },
-        "<"
-      );
-      tl.to(img, { scale: 1.2, ease: "none", duration: 2 }, "-=0.5");
-    });
+  //  document.querySelectorAll(".photo-box").forEach((el) => {
+  //  const img = el.querySelector(".circumscribed-photo-box-hidden");
+  //  const title = el.querySelector(".card_title");
+  //    const text = el.querySelector(".card_text");
+  //    const tl = gsap.timeline({
+  //      scrollTrigger: {
+  //        trigger: el,
+  //        start: "top 80p%",
+  //        end: `+=${window.innerHeight / 2}`,
+  //        scrub: 1,
+  //      },
+  //    });
+  //    tl.fromTo(
+  //      title,
+  //      { y: 50 },
+  //      {
+  //        y: 0,
+  //        ease: "none",
+  //        duration: 1,
+  //      },
+  //    );
+  //    tl.fromTo(
+  //      text,
+  //      { y: 50 },
+  //      {
+  //        y: 0,
+  //        ease: "none",
+  //        duration: 1,
+  //      },
+  //      "<"
+  //    );
+  //    tl.to(img, { scale: 1.2, ease: "none", duration: 2 }, "-=0.5");
+  //  });
 
     // 下部
 

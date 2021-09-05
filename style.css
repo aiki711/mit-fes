@@ -3,16 +3,14 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 body {
-  background: #eee;
+  background: rgb(193, 192, 192);
   margin: 0;
   font-family: "Hiragino Sans W3", "Hiragino Kaku Gothic ProN",
     "ヒラギノ角ゴ ProN W3", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic",
     sans-serif;
-  background-color: #f0f8ff;
+  background-color: #ffffff;
 }
-
 ul {
   display: flex;
   list-style: none;
@@ -39,11 +37,9 @@ li ::after {
   transform-origin: center top; /*変形（アンダーバーの伸長）の原点を、liの真ん中指定*/
   transition: transform 0.75s; /*変形の時間*/
 }
-
 li :hover::after {
   transform: scale(1, 1); /*ホバー後、x軸方向に1（相対値）伸長*/
 }
-
 .top {
   height: 900px;
   width: 100%;
@@ -88,47 +84,112 @@ nav {
   z-index: 1;
   position: absolute;
   top: 350px;
-  right: auto;
+  right: 55%;
 }
 .top_title > span {
   display: inline-block;
 }
 
 .section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 70vw;
-}
-
-.card {
-  width: 800px;
-  height: 20vw;
-  margin-top: 200px;
+  height: 850px;
+  width: 1000px;
+  margin-top: 50px;
+  margin-left: 320px;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   justify-content: center;
-  gap: 1vw;
-  font-size: 15px;
 }
-.card_figure {
-  width: 400px;
-  height: 300px;
+.photo-box {
+  width: 620px; /* 画像の幅調整 */
+  height: 350px;
+
+  /*display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;*/
+}
+.photo-box .circumscribed-photo-box-hidden {
+  width: 100%;
+  position: relative;
   overflow: hidden;
 }
-.card_img {
+.photo-box .mask {
+  position: absolute;
   width: 100%;
-  height: auto;
+  height: 0;
+  padding-top: 65%; /* 画像の高さ調整をした場合は、こちらも同じ値に変更 */
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.449);
 }
-.card_title {
-  margin-bottom: 20px;
+.photo-box .mask-text {
+  position: absolute;
+  width: 100%;
+  top: 100%;
+  left: 0;
+  font-size: 0.8em;
+  color: #fff;
+  text-align: center;
+  transition: all 0.5s ease;
 }
-.card_text {
-  line-height: 1.8;
+.photo-box .mask-text {
+  position: absolute;
+  width: 100%;
+  top: 100%;
+  left: 0;
+  font-size: 1.8em;
+  color: #fff;
+  text-align: center;
+  transition: all 0.5s ease;
+}
+.photo-box .mouse-over-mask {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+.photo-box:hover .mouse-over-mask {
+  opacity: 1;
+}
+.photo-box:hover .mask-text {
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+}
+.photo-box .circumscribed-photo-box1 {
+  width: 600px;
+  height: 0;
+  padding-top: 65%; /* 画像の高さ調整 */
+  background: url(https://picsum.photos/id/1015/600/400) no-repeat center center; /* 画像のURLを指定 */
+  background-size: cover;
+}
+.photo-box .circumscribed-photo-box2 {
+  width: 600px;
+  height: 0;
+  padding-top: 65%; /* 画像の高さ調整 */
+  background: url(https://picsum.photos/id/1016/600/400) no-repeat center center; /* 画像のURLを指定 */
+  background-size: cover;
+}
+.photo-box .circumscribed-photo-box3 {
+  width: 600px;
+  height: 0;
+  padding-top: 65%; /* 画像の高さ調整 */
+  background: url(https://picsum.photos/id/1016/600/400) no-repeat center center; /* 画像のURLを指定 */
+  background-size: cover;
+}
+.photo-box .circumscribed-photo-box4 {
+  width: 600px;
+  height: 0;
+  padding-top: 65%; /* 画像の高さ調整 */
+  background: url(https://picsum.photos/id/1015/600/400) no-repeat center center; /* 画像のURLを指定 */
+  background-size: cover;
 }
 
 .bottom {
-  height: 700px;
+  height: 750px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -142,7 +203,7 @@ nav {
   font-weight: bold;
 }
 .bottom.is-crossed {
-  background: #333333;
+  background: #4b5d46d4;
   height: 45vw;
 }
 .bottom.is-crossed .bottom_text {
@@ -174,7 +235,7 @@ nav {
   position: relative;
 }
 .top_title_sns {
-  font-size: 60px;
+  font-size: 50px;
   font-weight: bold;
   margin-bottom: 30px;
 }
@@ -295,7 +356,6 @@ nav {
   animation: particleAnimate14 800ms;
   animation-fill-mode: forwards;
 }
-
 @keyframes explosionAnime {
   0% {
     opacity: 0;
@@ -645,23 +705,31 @@ nav {
   padding-bottom: 0;
 }
 .access {
-  margin-right: 5%;
-  margin-left: 5%;
-  margin-top: 8vw;
-  margin-bottom: 8vw;
-  border-left: 3px solid #333333;
-  border-right: 3px solid #333333;
   text-align: center;
-  font-size: 30px;
+  font-size: 20px;
   font-weight: bold;
-  height: 40vw;
+  height: 350px;
 }
 .access h1 {
-  font-size: 60px;
+  font-size: 50px;
 }
-.access p {
-  line-height: 60px;
-  margin-top: 100px;
+.access {
+  line-height: 70px;
+  margin-top: 60px;
+}
+.root {
+  display: flex;
+  flex-flow: column;
+  height: 100px;
+  margin: 0 0 2em;
+  line-height: 10px;
+  padding-top: 30px;
+}
+.content {
+  padding: 0.5em;
+  margin: 0.2em auto;
+  width: 50%;
+  font-size: 18px;
 }
 .contact {
   margin-top: 20vw;
@@ -676,5 +744,5 @@ nav {
 .map {
   display: flex;
   justify-content: center;
-  padding-bottom: 10vw;
+  padding-bottom: 60px;
 }
