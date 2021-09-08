@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+<head>
+<meta charset="UTF-8" />
+<title>新着情報欄更新システムのサンプル</title>
+<meta name="robots" content="noindex,nofollow" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+<style>
+/* サンプルページ専用CSS ここから (既存サイトに組み込む場合は必要ありません) */
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", Verdana, Arial, sans-serif;
+	color: #454545;
+	line-height: 1.8;
+	background: #f0f0f0;
+}
+
+div.contents-1,
+div.contents-2 {
+	width: 650px;
+	margin: 50px auto;
+	padding: 20px 40px;
+	background: #ffffff;
+	border: 1px solid #cccccc;
+	border-radius: 7px;
+	box-shadow: 0 0 7px rgba( 0, 0, 0, 0.2 );
+}
+
+div.contents-1 h1,
+div.contents-2 h2 {
+	font-size: 135%;
+	font-weight: bold;
+	border-bottom: 1px solid #333333;
+}
+
+div.contents-1 p {
+	margin: 20px 0 40px;
+}
+
+div.contents-1 dl dt {
+	font-weight: bold;
+	margin: 15px 0 0;
+}
+
+div.contents-2 dl dt {
+	font-weight: bold;
+	margin: 0 0 3px;
+}
+
+div#news {
+	word-wrap: break-word;
+}
+
+div#news div#information div {
+	margin: 20px 0;
+	border-top: 1px dotted #333333;
+	padding-top: 20px;
+}
+
+div#news div#information div:first-child {
+	border-top: none;
+	padding-top: 0;
+}
+
+
+@media screen and ( max-width: 1000px ) {
+
+div.contents-1,
+div.contents-2 {
+	width: 85%;
+	padding: 20px 5%;
+}
+
+}
+/* サンプルページ専用CSS ここまで */
+</style>
+</head>
+<body>
+
+
+
+
+<div class="contents-1">
+	<h1>サンプルページ</h1>
+	<p>このページのHTMLソースを見るとわかるように、ページに組み込む際に読み込ませるファイルは contents-maker-js.php の1ファイルだけです。<br />見た目のデザインはすべてCSSで設定できるようになっています。</p>
+	<p>以下のアドオンを追加設置することで、欲しい機能だけを自由に追加することができます。</p>
+	<dl>
+		<dt><a href="https://www.1-firststep.com/archives/6004" target="_blank">【編集機能アドオン】</a></dt>
+		<dd>過去の投稿内容を管理画面上で編集できるようになります。</dd>
+		<dt><a href="https://www.1-firststep.com/archives/4516" target="_blank">【画像アップロードアドオン】</a></dt>
+		<dd>新着情報欄に画像をアップロードすることができるようになります。</dd>
+		<dt><a href="https://www.1-firststep.com/archives/10492" target="_blank">【公開・非公開切り替えアドオン】</a></dt>
+		<dd>いつでも投稿の公開または非公開を切り替えできるようになります。</dd>
+		<dt><a href="https://www.1-firststep.com/archives/6009" target="_blank">【並び替えアドオン】</a></dt>
+		<dd>過去の投稿をマウスのドラッグ操作だけで自由に並び替えることができます。</dd>
+		<dt><a href="https://www.1-firststep.com/archives/10494" target="_blank">【表示件数設定アドオン】</a></dt>
+		<dd>新着情報を公開するページでの表示投稿数を設定できるようになります。</dd>
+		<dt><a href="https://www.1-firststep.com/archives/6011" target="_blank">【HTMLタグアドオン】</a></dt>
+		<dd>HTMLのタグを含んでいる内容を投稿できるようになります。</dd>
+	</dl>
+</div>
+
+<div class="contents-2">
+	<h2>新着情報欄のサンプル</h2>
+	<div id="news"></div>
+</div>
+
+
+
+
+<script src="contents-maker/js/contents-maker-js.php" id="contents-maker-js" async="async"></script>
+</body>
+</html>
