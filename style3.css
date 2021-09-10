@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: url("https://picsum.photos/id/10/1920/1200") no-repeat;
+  background-image: url("https://picsum.photos/id/10/1920/1200");
+  background-attachment: fixed;
+  margin: 0;
+  font-family: "Hiragino Sans W3", "Hiragino Kaku Gothic ProN",
+    "ヒラギノ角ゴ ProN W3", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic",
+    sans-serif;
+  background-color: #ffffff;
+}
+.globalmenu {
+  width: 100%;
+  padding: 0px 10px;
+  top: 0;
+  z-index: 1;
+  display: flex;
+}
+.globalmenu nav {
+  margin: 0 0 0 auto;
+  font-size: 15px;
+  z-index: 1;
+  position: absolute;
+  left: 1100px;
+}
+.globalmenu ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.globalmenu li ::after {
+  position: absolute; /*親要素であるaタグを基準に位置を指定*/
+  bottom: 3px; /*アンダーバーが位置する、各リストの下端からの高さ*/
+  left: 0; /*アンダーバーを各リストの左端に指定*/
+  content: ""; /*本来は、擬似要素に入るテキストなどを’’内に指定。今回はアンダーバーなので何も記載しない*/
+  width: 100%; /*アンダーバーの幅は各リストの幅*/
+  height: 2px; /*アンダーバーの高さ（太さ）*/
+  background: #000000; /*アンダーバーの色*/
+  transform: scale(0, 1); /*アンダーバーの縮尺比率。ホバー前はx方向に0*/
+  transform-origin: center top; /*変形（アンダーバーの伸長）の原点を、liの真ん中指定*/
+  transition: transform 0.75s; /*変形の時間*/
+}
+.globalmenu li :hover::after {
+  transform: scale(1, 1); /*ホバー後、x軸方向に1（相対値）伸長*/
+}
+.globalmenu a {
+  color: #000;
+  text-decoration: none;
+  display: block;
+  line-height: 60px;
+  padding: 0 20px;
+  position: relative;
+}
+.infor {
+  margin-top: 150px;
+  margin-left: 0;
+  margin-right: 0;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #ffffff;
+}
+#access {
+  font-size: 20px;
+  font-weight: bold;
+  height: 350px;
+  line-height: 70px;
+  margin-top: 60px;
+}
+#access h1 {
+  text-align: center;
+  font-size: 50px;
+}
+.root {
+  display: flex;
+  flex-flow: column;
+  height: 100px;
+  margin: 0 0 2em;
+  line-height: 10px;
+  padding-top: 30px;
+}
+.content {
+  padding: 0.5em;
+  margin: 0.2em auto;
+  width: 30%;
+  font-size: 18px;
+}
+.map {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 60px;
+}
+.contact_image {
+  left: 0;
+  height: 400px;
+  width: 100%;
+  background: url("https://picsum.photos/id/10/1920/1200") no-repeat;
+  background-image: url("https://picsum.photos/id/10/1920/1200");
+  background-attachment: fixed;
+}
+.contact_content {
+  padding-top: 100px;
+  height: 400px;
+  display: flex;
+  text-align: center;
+  flex-flow: column;
+  font-size: 30px;
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.469);
+  color: #fff;
+}
+.contact_content h1 {
+  text-align: center;
+  font-size: 50px;
+}
+.contact_content .mail_content {
+  padding-top: 30px;
+}
+.contact_content .mail_content .copyright {
+  font-size: 15px;
+}

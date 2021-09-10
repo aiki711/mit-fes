@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: url("https://picsum.photos/id/10/1920/1200") no-repeat;
+  background-image: url("https://picsum.photos/id/10/1920/1200");
+  background-attachment: fixed;
+}
+.globalmenu {
+  width: 100%;
+  padding: 0px 10px;
+  top: 0;
+  z-index: 1;
+  display: flex;
+}
+.globalmenu nav {
+  margin: 0 0 0 auto;
+  font-size: 15px;
+  z-index: 1;
+  position: absolute;
+  left: 1100px;
+}
+.globalmenu ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.globalmenu li ::after {
+  position: absolute; /*親要素であるaタグを基準に位置を指定*/
+  bottom: 3px; /*アンダーバーが位置する、各リストの下端からの高さ*/
+  left: 0; /*アンダーバーを各リストの左端に指定*/
+  content: ""; /*本来は、擬似要素に入るテキストなどを’’内に指定。今回はアンダーバーなので何も記載しない*/
+  width: 100%; /*アンダーバーの幅は各リストの幅*/
+  height: 2px; /*アンダーバーの高さ（太さ）*/
+  background: #000000; /*アンダーバーの色*/
+  transform: scale(0, 1); /*アンダーバーの縮尺比率。ホバー前はx方向に0*/
+  transform-origin: center top; /*変形（アンダーバーの伸長）の原点を、liの真ん中指定*/
+  transition: transform 0.75s; /*変形の時間*/
+}
+.globalmenu li :hover::after {
+  transform: scale(1, 1); /*ホバー後、x軸方向に1（相対値）伸長*/
+}
+.globalmenu a {
+  color: #000;
+  text-decoration: none;
+  display: block;
+  line-height: 60px;
+  padding: 0 20px;
+  position: relative;
+}
+.infor {
+  margin-top: 150px;
+  margin-left: 0;
+  margin-right: 0;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #fff;
+}
+.title {
+  width: 50%;
+  margin-left: 45%;
+  font-size: 28px;
+  padding-bottom: 15px;
+}
+.infor_content {
+  width: 50%;
+  margin-left: 25%;
+}
+.infor li {
+  border-bottom: 1px dotted #000;
+  list-style: none;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  width: 800px;
+}
+a {
+  color: #000;
+  text-decoration: none;
+}
+span {
+  background-color: #2388b8;
+  border-radius: 3px;
+  color: #fff;
+  display: inline-block;
+  margin-right: 20px;
+  padding: 5px;
+  margin-right: 50px;
+}
+time {
+  display: inline-block;
+  font-weight: bold;
+  margin-right: 40px;
+}
+p {
+  color: #1c448d;
+  display: inline-block;
+  text-decoration: underline;
+}
+.new::after {
+  content: "NEW";
+  color: #d10606;
+  font-size: 1.1rem;
+  border: 1px solid #d10606;
+  padding: 4px 8px;
+  margin: 0 0 0 20px;
+  display: inline-block;
+  line-height: 1;
+}
+.contact_image {
+  left: 0;
+  height: 400px;
+  width: 100%;
+  background: url("https://picsum.photos/id/10/1920/1200") no-repeat;
+  background-image: url("https://picsum.photos/id/10/1920/1200");
+  background-attachment: fixed;
+}
+.contact_content {
+  padding-top: 100px;
+  height: 400px;
+  display: flex;
+  text-align: center;
+  flex-flow: column;
+  font-size: 30px;
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.469);
+  color: #fff;
+}
+.contact_content h1 {
+  text-align: center;
+  font-size: 50px;
+}
+.contact_content .mail_content {
+  padding-top: 30px;
+}
+.contact_content .mail_content .copyright {
+  font-size: 15px;
+}

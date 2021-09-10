@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>mit-fes</title>
+  <style></style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/ityped@1.0.3"></script>
+  <link rel="stylesheet" href="style1.css" />
+</head>
+
+<body>
+  <section class="top">
+    <div class="top_image"></div>
+    <div class="globalmenu">
+      <div class="logo">
+        <a href="#"></a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">ホーム</a></li>
+          <li><a href="#top_title_sns">Twitter</a></li>
+          <li><a href="index2.html">お知らせ</a></li>
+          <li><a href="index3.html">アクセス</a></li>
+          <li><a href="#">企業の方へ</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="top_title">
+      <span>T</span>
+      <span>i</span>
+      <span>t</span>
+      <span>l</span>
+      <span>e</span>
+    </div>
+  </section>
+  <section class="section">
+    <div class="photo-box">
+      <a href="#">
+        <!-- リンク先を指定 -->
+        <div class="circumscribed-photo-box-hidden">
+          <div class="circumscribed-photo-box1"></div>
+          <div class="mouse-over-mask">
+            <div class="mask">
+              <div class="mask-text">体育祭について</div>
+            </div><!-- .mask -->
+          </div><!-- .mouse-over-mask -->
+        </div><!-- .circumscribed-photo-box-hidden -->
+      </a>
+    </div> <!-- .photo-box1 -->
+    <div class="photo-box">
+      <a href="#">
+        <!-- リンク先を指定 -->
+        <div class="circumscribed-photo-box-hidden">
+          <div class="circumscribed-photo-box2"></div>
+          <div class="mouse-over-mask">
+            <div class="mask">
+              <div class="mask-text">大学祭について</div>
+            </div><!-- .mask -->
+          </div><!-- .mouse-over-mask -->
+        </div><!-- .circumscribed-photo-box-hidden -->
+      </a>
+    </div> <!-- .photo-box2 -->
+    <div class="photo-box">
+      <a href="index2.html">
+        <!-- リンク先を指定 -->
+        <div class="circumscribed-photo-box-hidden">
+          <div class="circumscribed-photo-box3"></div>
+          <div class="mouse-over-mask">
+            <div class="mask">
+              <div class="mask-text">お知らせ</div>
+            </div><!-- .mask -->
+          </div><!-- .mouse-over-mask -->
+        </div><!-- .circumscribed-photo-box-hidden -->
+      </a>
+    </div> <!-- .photo-box3 -->
+    <div class="photo-box">
+      <a href="#">
+        <!-- リンク先を指定 -->
+        <div class="circumscribed-photo-box-hidden">
+          <div class="circumscribed-photo-box4"></div>
+          <div class="mouse-over-mask">
+            <div class="mask">
+              <div class="mask-text">企業の方へ</div>
+            </div><!-- .mask -->
+          </div><!-- .mouse-over-mask -->
+        </div><!-- .circumscribed-photo-box-hidden -->
+      </a>
+    </div> <!-- .photo-box4 -->
+  </section>
+  <section class="bottom">
+    <p class="bottom_text bottom_text__left js-bottom_left">もっと知りたい！</p>
+    <p class="bottom_text bottom_text__rigth js-bottom_right">そんな方へ</p>
+  </section>
+  <section class="sns">
+    <div>
+      <section class="top_sns">
+        <h1 id="top_title_sns">Official Twitter</h1>
+        <svg class="top_icon_sns" xmlns="http://www.w3.org/2000/svg" height="110px" viewBox="0 0 24 24" width="110px"
+          fill="#000000">
+          <path d="M24 24H0V0h24v24z" fill="none" opacity=".87" />
+          <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6-1.41-1.41z" />
+        </svg>
+        <!--ハートアイコン-->
+        <svg class="likeButton" width="150px" height="150px" viewBox="0 0 500 500">
+          <circle class="explosion" r="150" cx="250" cy="250"></circle>
+          <g class="particleLayer">
+            <circle fill="#8CE8C3" cx="130" cy="126.5" r="12.5" />
+            <circle fill="#8CE8C3" cx="411" cy="313.5" r="12.5" />
+            <circle fill="#91D2FA" cx="279" cy="86.5" r="12.5" />
+            <circle fill="#91D2FA" cx="155" cy="390.5" r="12.5" />
+            <circle fill="#CC8EF5" cx="89" cy="292.5" r="10.5" />
+            <circle fill="#9BDFBA" cx="414" cy="282.5" r="10.5" />
+            <circle fill="#9BDFBA" cx="115" cy="149.5" r="10.5" />
+            <circle fill="#9FC7FA" cx="250" cy="80.5" r="10.5" />
+            <circle fill="#9FC7FA" cx="78" cy="261.5" r="10.5" />
+            <circle fill="#96D8E9" cx="182" cy="402.5" r="10.5" />
+            <circle fill="#CC8EF5" cx="401.5" cy="166" r="13" />
+            <circle fill="#DB92D0" cx="379" cy="141.5" r="10.5" />
+            <circle fill="#DB92D0" cx="327" cy="397.5" r="10.5" />
+            <circle fill="#DD99B8" cx="296" cy="392.5" r="10.5" />
+          </g>
+          <path class="heart"
+            d="M250,187.4c-31.8-47.8-95.5-19.8-95.5,32.2c0,35.2,31.8,60.3,55.7,79.2c24.9,19.7,31.8,23.9,39.8,31.8 c7.9-7.9,14.6-12.6,39.8-31.8c24.3-18.5,55.7-44.4,55.7-79.6C345.5,167.6,281.8,139.7,250,187.4z" />
+        </svg>
+        <!--ハートアイコンここまで-->
+      </section>
+      <a class="twitter-timeline" data-width="900" data-height="600"
+        href="https://twitter.com/YaMaa0711?ref_src=twsrc%5Etfw">Tweets by YaMaa0711</a>
+      <script class="twitter_timeline" async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+  </section>
+  <section class="bwimage">
+    <div class="bw_image"></div>
+  </section>
+  <section id="access">
+    <p>
+      <h1>ACCESS</h1>
+      <div class="root">
+        <div class="content">長野駅から徒歩1年</div>
+        <div class="content">最寄りの駅：I have nothing to do</div>
+        <div class="content">最寄りのバス停：目玉焼き食べたい</div>
+        <div class="content">結局19才なんだよね</div>
+        <div class="content">ふんふんふんふんふんふんふん</div>
+      </div>
+    </p>
+  </section>
+  <section class="map">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6811.747522582341!2d141.34506863481894!3d43.066667201496124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f0b2974d2c3f903%3A0xa5e2b18cdd4a47a5!2z5pyt5bmM6aeF!5e0!3m2!1sja!2sjp!4v1630691491784!5m2!1sja!2sjp"
+        width="900" height="650" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  </section>
+  <section class="contact">
+    <div class="contact_image">
+      <div class="contact_content">
+        <p>
+          <h1>CONTACT</h1>
+          <div class="mail_content">
+            <div class="mail">Mail：mit_fes@hotmail.com</div>
+            <div class="copyright">Copyright(C) mit-school-festival-circle All Rights Reserved.</div>
+          </div>
+        </p>
+      </div>
+    </div>
+  </section>
+  <script>
+    gsap.registerPlugin(ScrollTrigger);
+
+    //トップの画像パララックス
+    const topTl = gsap.timeline({
+        scrollTrigger: {
+          trigger: ".top",
+          start: "top top",
+          end: "bottom top",
+          scrub: 1,
+        },
+      });
+
+    // ラベルについて https://greensock.com/docs/v3/GSAP/Timeline/addLabel()
+    // アニメーションの実行タイミングの基準点になります
+    topTl.addLabel("topLabel")
+    document.querySelectorAll(".top_title span").forEach((el, index) => {
+      console.log(el)
+      topTl.to(el, {
+        y: -50,
+        duration: 0.1
+      }, `topLabel+=${index / 20}`)
+    })
+    topTl.to(".top_image", {
+      backgroundPositionY: 50,
+      duration: 1
+    }, "topLabel");
+
+    // 下部
+
+    ScrollTrigger.create({
+      trigger: ".bottom",
+      start: "top 70%",
+      toggleClass: "is-crossed",
+    });
+    const bottomTl = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".bottom",
+        start: "top bottom",
+        end: "center center",
+        scrub: 1,
+      },
+    });
+    bottomTl
+      .fromTo(
+        ".js-bottom_left",
+        {
+          xPercent: -100,
+        },
+        { xPercent: 0 }
+      )
+      .fromTo(
+        ".js-bottom_right",
+        {
+          xPercent: 100,
+        },
+        { xPercent: 0 },
+        "<"
+      );
+  </script>
+  <script>
+    gsap.registerPlugin(ScrollTrigger);
+
+    // トップの矢印の往復アニメーション
+    gsap.to(".top_icon_sns", { y: 20, yoyo: true, repeat: -1 });
+
+    // パーティクル生成アニメーション
+    ScrollTrigger.create({
+      trigger: ".likeButton",
+      start: "top center",
+      toggleClass: "is-active",
+      once: true,
+    });
+
+    // カードがスクロールに合わせて出現
+    document.querySelectorAll(".card").forEach((el) => {
+      gsap.fromTo(
+        el,
+        { y: 50, opacity: 0 },
+        {
+          y: 0,
+          opacity: 1,
+          duration: 1.5,
+          scrollTrigger: {
+            trigger: el,
+            start: "top 90%",
+            ease: "expo",
+          },
+        }
+      );
+    });
+
+    // タイピングアニメーションの発火
+    function initTypeAnim() {
+      ityped.init(document.querySelector(".ityped"), {
+        strings: ["ICS MEDIA"], //表示させたい文字の設定 区切りはカンマ
+        startDelay: 0, //アニメーション開始までの遅延、大きいほど遅れる
+        typeSpeed: 120, //表示させるスピード、大きいほどゆっくり
+        loop: false, //ループ
+        backSpeed: 80, //戻るスピード
+        backDelay: 150, //戻る時間指定
+        showCursor: true, //カーソル表示
+        cursorChar: "|", //カーソルとして表示するテキスト
+      });
+    }
+    ScrollTrigger.create({
+      trigger: ".ityped",
+      start: "top 90%",
+      onEnter: initTypeAnim,
+      once: true,
+    });
+  </script>
+</body>
+
+</html>
